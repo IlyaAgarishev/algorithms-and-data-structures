@@ -1,7 +1,7 @@
 # Алгоритмы и структуры данных в javascript
 
 ## Алгоритм линейного поиска в массиве(Linear Search):
-```
+```javascript
 const array = [1, 4, 5, 8, 5, 1, 2, 7, 5, 2, 11];
 
 let count = 0;

@@ -10,21 +10,29 @@ let count = 0;
 // затем меняем местами с первым элементом, затем опять пробегаемся по массиву и находим минимальное значение,
 // но меняем его уже со вторым элементом, затем с 3,4 итд пока не будет отсортирован весь массив.
 function selectionSort(array) {
+  // Этот цикл просто идет по всем элементам
   for (let i = 0; i < array.length; i++) {
     let indexMin = i;
+    // Во вложенном цикле ищется минимальный элемент на данную итерацию
     for (let j = i + 1; j < array.length; j++) {
       if (array[j] < array[indexMin]) {
         indexMin = j;
       }
       count += 1;
     }
+
+    // Меняем местами элементы
     let tmp = array[i];
     array[i] = array[indexMin];
     array[indexMin] = tmp;
   }
+
+  // Возвращаем отсортированный массив
   return array;
 }
 
+// Кол-во итераций 325. Длина массива 26. Таким образом O(1/2*n*n),
+// но коэффициенты в оценке сложности алгоритма не учавствуют. Поэтому будет O(n*n)
 console.log(selectionSort(arr));
 console.log(arr.length);
 console.log("count = ", count);

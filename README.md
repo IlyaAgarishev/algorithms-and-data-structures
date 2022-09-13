@@ -162,3 +162,11 @@ const fibonachi = (n) => {
   return fibonachi(n - 1) + fibonachi(n - 2);
 };
 ```
+
+## Быстрая сортировка(Quick Sort):
+
+![QuickSort](https://i.imgur.com/VIQNhPb.png)
+
+```javascript
+
+```

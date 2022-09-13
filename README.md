@@ -234,3 +234,11 @@ function quickSort(array) {
   return [...quickSort(less), pivot, ...quickSort(greater)];
 }
 ```
+
+## Поиск в ширину в графе:
+
+![PoiskVShirinu](https://i.imgur.com/SxOxCXk.png)
+
+```javascript
+
+```

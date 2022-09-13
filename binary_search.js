@@ -43,3 +43,25 @@ function binarySearch(array, item) {
 
 console.log(binarySearch(array, 0));
 console.log(count);
+
+// Реализация с помощью рукурсии.
+// item - сам элемент, который ищем
+// стартовую и конечную позицию передаем через параметры
+
+function recursiveBinarySearch(array, item, start, end) {
+  let middle = Math.floor((start + end) / 2);
+  count += 1;
+  if (item === array[middle]) {
+    return middle;
+  }
+  if (item < array[middle]) {
+    // отсеиваем всю правую часть
+    return recursiveBinarySearch(array, item, start, middle - 1);
+  } else {
+    // отсеиваем всю левую часть
+    return recursiveBinarySearch(array, item, middle + 1, end);
+  }
+}
+
+console.log(recursiveBinarySearch(array, 12, 0, array.length));
+console.log(count);

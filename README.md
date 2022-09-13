@@ -66,6 +66,29 @@ function binarySearch(array, item) {
 }
 ```
 
+## Рекурсивный бинарный поиск (Recursive binary Search):
+
+```javascript
+// Реализация с помощью рукурсии.
+// item - сам элемент, который ищем
+// стартовую и конечную позицию передаем через параметры
+
+function recursiveBinarySearch(array, item, start, end) {
+  let middle = Math.floor((start + end) / 2);
+  count += 1;
+  if (item === array[middle]) {
+    return middle;
+  }
+  if (item < array[middle]) {
+    // отсеиваем всю правую часть
+    return recursiveBinarySearch(array, item, start, middle - 1);
+  } else {
+    // отсеиваем всю левую часть
+    return recursiveBinarySearch(array, item, middle + 1, end);
+  }
+}
+```
+
 ## Сортировка выбором(Selection Sort):
 
 ```javascript

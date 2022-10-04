@@ -134,7 +134,7 @@ function selectionSort(array) {
       count += 1;
     }
 
-    // Меняем местами минимальный элемент, который нашли и меняем его местами с i
+    // Меняем местами минимальный элемент с current элементом (i)
     let tmp = array[i];
     array[i] = array[indexMin];
     array[indexMin] = tmp;

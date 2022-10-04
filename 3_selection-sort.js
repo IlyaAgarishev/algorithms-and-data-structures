@@ -21,7 +21,7 @@ function selectionSort(array) {
       count += 1;
     }
 
-    // Меняем местами элементы
+    // Меняем местами минимальный элемент, который нашли и меняем его местами с i
     let tmp = array[i];
     array[i] = array[indexMin];
     array[indexMin] = tmp;

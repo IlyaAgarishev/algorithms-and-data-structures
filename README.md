@@ -259,6 +259,7 @@ function quickSort(array) {
 ## Поиск в ширину в графе(Breadth First Search):
 
 ![BreadthFirstSearch](https://i.imgur.com/SxOxCXk.png)
+![Queue](https://i.imgur.com/IMM1k7M.png)
 
 ```javascript
 // Граф - это некая абстрактная структура данных, предствляющая собой множество
